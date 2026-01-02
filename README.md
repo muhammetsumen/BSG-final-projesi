@@ -13,10 +13,14 @@ Algoritma Mantığı:
    Akış A: Kullanıcının girdiği tohumdan üretilir.
    Akış B: Gizli bir anahtar sayıdan üretilir ve ters çevrilir.
    
+Anahtar Değer: Algoritmada anahtar değer önceden seçilen bir değer değildir. Girilen tohum değeri $n$ ise $n+1$ değeri anahtar değer olacaktır.  
+   
 Karıştırma (Diffusion): İki akış XOR işlemine sokularak bitlerin homojen dağılması (0 ve 1 dengesi) sağlanır.
 
 
 # Algoritmanın Sözde (Pseudo) Kodu
+
+# Projenin Sözde (Pseudo) Kodu
 
 ```text
 BAŞLA
@@ -30,16 +34,19 @@ FONKSİYON SmartCollatz(sayı, uzunluk):
         DEĞİLSE (sayı ÇİFT ise):
             sayı = sayı / 2
         
-        EĞER yeni_sayı TEK ise:
-            Dizi'ye 0 ekle
-        DEĞİLSE:
-            Dizi'ye 1 ekle
-    DÖNGÜ SONU
+        EĞER yeni_sayı TEK ise: Dizi'ye 0 ekle
+        DEĞİLSE: Dizi'ye 1 ekle
+    
+    EĞER Dizi kısa kaldıysa:
+        Dizi'yi başa sararak doldur (Cyclic Padding)
+    
     DÖNDÜR Dizi
 
 ANA PROGRAM:
     Girdi: Kullanıcı Tohumu (Seed)
-    Sabit: Anahtar Değeri (Key)
+    
+    // Çığ Etkisi (Avalanche Effect) için Anahtar türetimi
+    Hesapla: Anahtar (Key) = Seed + 1
 
     Akış_A = SmartCollatz(Seed)
     Akış_B = SmartCollatz(Key)
@@ -48,7 +55,7 @@ ANA PROGRAM:
     Sonuç_Şifresi = Akış_A XOR Akış_B
     
     YAZDIR Sonuç_Şifresi
-    HESAPLA İstatistikler (0 ve 1 oranı)
+    HESAPLA İstatistikler
 
 BİTİR
 ```
@@ -56,20 +63,20 @@ BİTİR
 # Algoritmanın Akış Şeması
 ```mermaid
 graph TD
-    A[Başlat: Tohum ve Anahtar Al] --> B{Sayı Tek mi?}
-    B -- Evet --> C[3n+1 İşlemi]
-    C --> D[Zorunlu 2'ye Bölme - Atla]
-    B -- Hayır --> E[2'ye Bölme]
-    D --> F[Yeni Sayı Kontrolü]
-    E --> F
-    F -->|Sonuç Tek| G[Bit: 0 Ekle]
-    F -->|Sonuç Çift| H[Bit: 1 Ekle]
-    G --> I{Uzunluk Yeterli mi?}
-    H --> I
-    I -- Hayır --> B
-    I -- Evet --> J[Akış A ve B'yi Oluştur]
-    J --> K[Akış B'yi Ters Çevir]
-    K --> L[A XOR B İşlemi]
-    L --> M[Sonuç Şifresini Yazdır]
-
+    A[Başlat: Kullanıcıdan Tohum Al] --> B[Otomatik Anahtar Hesapla: Key = Seed + 1]
+    B --> C{Sayı Tek mi?}
+    C -- Evet --> D[3n+1 İşlemi]
+    D --> E[Zorunlu 2'ye Bölme - Atla]
+    C -- Hayır --> F[2'ye Bölme]
+    E --> G[Yeni Sayı Kontrolü]
+    F --> G
+    G -->|Sonuç Tek| H[Bit: 0 Ekle]
+    G -->|Sonuç Çift| I[Bit: 1 Ekle]
+    H --> J{Uzunluk Yeterli mi?}
+    I --> J
+    J -- Hayır --> C
+    J -- Evet --> K[Akış A Tohum ve Akış B Anahtar Oluştur]
+    K --> L[Akış B'yi Ters Çevir]
+    L --> M[A XOR B İşlemi]
+    M --> N[Sonuç Şifresini ve İstatistikleri Yazdır]
  
