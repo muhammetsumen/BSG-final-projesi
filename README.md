@@ -1,4 +1,6 @@
 # BSG-final-projesi
+
+# Algoritma Mantığının Açıklaması  
 Collatz yanılgısı kullanılarak dengeli ve çözülmesi zor bir rastgele sayı üreteci algoritması tasarlıyorum
 Proje Başlığı: Collatz Cipher (CC-Encryption)
 
@@ -14,7 +16,7 @@ Algoritma Mantığı:
 Karıştırma (Diffusion): İki akış XOR işlemine sokularak bitlerin homojen dağılması (0 ve 1 dengesi) sağlanır.
 
 
-# Projenin Sözde (Pseudo) Kodu
+# Algoritmanın Sözde (Pseudo) Kodu
 
 ```text
 BAŞLA
@@ -51,7 +53,7 @@ ANA PROGRAM:
 BİTİR
 ```
 
-
+# Algoritmanın Akış Şeması
 ```mermaid
 graph TD
     A[Başlat: Tohum ve Anahtar Al] --> B{Sayı Tek mi?}
