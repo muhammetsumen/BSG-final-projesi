@@ -16,7 +16,7 @@
 
 
 
-#### Sonuçların Değerlendirilmesi:
+### Sonuçların Değerlendirilmesi:
 
 Gözlem: 62-81 aralığında başarı oranında ciddi bir düşüş (%45) gözlemlendi. Özellikle Seed: 68 gibi sayılarda %90 oranında '0' üretildi.
 
@@ -27,14 +27,15 @@ Collatz Canavarı (27 Sayısı) Hakkında Not
 "Not: Literatürde en uzun yörüngelerden birine sahip olan 27 sayısı, beklenenin aksine dengesiz bir dağılım vermiştir. Bu durum, Collatz yolunun uzunluğunun tek başına şifreleme kalitesini garantilemediğini, XOR işlemine giren iki sayının (27 ve 28) bit düzeyindeki ilişkisinin de kritik olduğunu göstermektedir."
 
 
- #### Aralık Bazlı Başarı Grafiği
-2-21   : [████████████████] %80
-22-41  : [██████████████  ] %70
+### Aralık Bazlı Başarı Grafiği
+
+```text
+2-21   : [████████████████ ] %80
+22-41  : [██████████████   ] %70
 42-61  : [█████████████████] %85
-62-81  : [█████████       ] %45 (Kritik Düşüş)
-82-101 : [████████████    ] %60
-
-
+62-81  : [█████████        ] %45 (Kritik Düşüş)
+82-101 : [████████████     ] %60
+```
 
 # Log değerleri ve ara hesaplamalar:
 
@@ -404,11 +405,11 @@ DURUM: >> DENGELİ << (Başarılı)
 
 
 
-###### <<<<<< 2-21 arasındaki 20 tohum değeri algoritma kullanıldı 16 tanesi dengeli şekilde şifrelendi. Başarı oranı %80 olarak hesaplandı. >>>>>>>
+### 2-21 arasındaki 20 tohum değeri algoritma kullanıldı 16 tanesi dengeli şekilde şifrelendi. Başarı oranı %80 olarak hesaplandı.
 
-###### 
 
-###### &nbsp;           !!!82-101 arasındaki değerlere kıyasla başarı oranı %20 YÜKSELDİ.!!!
+
+### !!!82-101 arasındaki değerlere kıyasla başarı oranı %20 YÜKSELDİ.!!!
 
 
 
@@ -774,11 +775,10 @@ DURUM: >> DENGELİ << (Başarılı)
 
 
 
-###### <<<<< 22-41 arasındaki 20 tohum değeri üzerinde algoritma kullanıldı 14 tanesi dengeli şekilde şifrelendi. Başarı oranı %70 olarak hesaplandı. >>>>>>>
+### 22-41 arasındaki 20 tohum değeri üzerinde algoritma kullanıldı 14 tanesi dengeli şekilde şifrelendi. Başarı oranı %70 olarak hesaplandı.
+ 
 
-###### 
-
-###### &nbsp;        !!!2-21 Arasındaki değerlere kıyasla başarı oranı %10 DÜŞTÜ.!!!
+### !!!2-21 Arasındaki değerlere kıyasla başarı oranı %10 DÜŞTÜ.!!!
 
 
 
@@ -1144,11 +1144,11 @@ DURUM: >> DENGELİ << (Başarılı)
 
 
 
-###### <<<<<<<< 42-61 arasındaki 20 tohum değeri algoritma kullanıldı 17 tanesi dengeli şekilde şifrelendi. Başarı oranı %85 olarak hesaplandı. >>>>>>>
+### 42-61 arasındaki 20 tohum değeri algoritma kullanıldı 17 tanesi dengeli şekilde şifrelendi. Başarı oranı %85 olarak hesaplandı.
 
-###### 
+ 
 
-###### &nbsp;          !!!22-41 arasındaki değerlere kıyasla başarı oranı %15 YÜKSELDİ.!!!
+### !!!22-41 arasındaki değerlere kıyasla başarı oranı %15 YÜKSELDİ.!!!
 
 
 
@@ -1514,13 +1514,11 @@ DURUM: >> DENGELİ << (Başarılı)
 
 
 
-###### <<<<< 62-81 arasındaki 20 tohum değeri algoritma kullanıldı 9 tanesi dengeli şekilde şifrelendi. Başarı oranı %45 olarak hesaplandı. >>>>>>>
+### 62-81 arasındaki 20 tohum değeri algoritma kullanıldı 9 tanesi dengeli şekilde şifrelendi. Başarı oranı %45 olarak hesaplandı.
+  
 
-###### &nbsp;   
+### !!!42-61 arasındaki değerlere kıyasla başarı oranı %40 DÜŞTÜ!!!
 
-###### &nbsp;        !!!42-61 arasındaki değerlere kıyasla başarı oranı %40 DÜŞTÜ!!!
-
-###### 
 
 Tohum Değeri Girin: 82
 
@@ -1884,39 +1882,38 @@ DURUM: Dengesiz
 
 
 
-###### <<<< 82-101 arasındaki 20 tohum değeri algoritma kullanıldı 12 tanesi dengeli şekilde şifrelendi. Başarı oranı %60 olarak hesaplandı. >>>>>>>
-
-###### 
-
-###### &nbsp;          !!!62-81 arasındaki değerlere kıyasla başarı oranı %15 YÜKSELDİ.!!!
-
-###### 
-
-###### <<<<<<<2-101 arasındaki 100 tohum değerinin 68 tanesi dengeli şekilde şifrelendi.  Başarı oranı %68 olarak hesaplandı. >>>>>>
+### 82-101 arasındaki 20 tohum değeri algoritma kullanıldı 12 tanesi dengeli şekilde şifrelendi. Başarı oranı %60 olarak hesaplandı.
 
 
 
+### !!!62-81 arasındaki değerlere kıyasla başarı oranı %15 YÜKSELDİ.!!!
 
 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-#### ALGORİTMANIN BAZI ÖZEL SAYILAR ÜZERİNDEKİ BAŞARI ORANLARI 
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-### Asal sayılar: 
-
-
-###### !!!2-101 arasındaki 26 asal sayının 20 tanesi dengeli bir dağılım göstererek başarılı oldu. Asal sayılar üzerinde başarı oranı %76,9 olarak hesaplandı!!!
+### 2-101 arasındaki 100 tohum değerinin 68 tanesi dengeli şekilde şifrelendi.  Başarı oranı %68 olarak hesaplandı.
 
 
 
 
 
-### 2nin katları olan sayılar:
 
 
-!!! bu sayılar sürekli ikiye bölünerek çok hızlı şekilde 1 değerine ulaşır ve hep çift sayı üretirler. Bu sayıları başarılı şekilde şifreleyebilirse algoritmayı başarılı sayabilirim.
+# ALGORİTMANIN BAZI ÖZEL SAYILAR ÜZERİNDEKİ BAŞARI ORANLARI 
+
+
+# Asal sayılar: 
+
+
+### !!!2-101 arasındaki 26 asal sayının 20 tanesi dengeli bir dağılım göstererek başarılı oldu. Asal sayılar üzerinde başarı oranı %76,9 olarak hesaplandı!!!
+
+
+
+
+
+# 2nin katları olan sayılar:
+
+
+### bu sayılar sürekli ikiye bölünerek çok hızlı şekilde 1 değerine ulaşır ve hep çift sayı üretirler. Bu sayıları başarılı şekilde şifreleyebilirse algoritmayı başarılı sayabilirim.
 
 
 
@@ -2102,13 +2099,13 @@ DURUM: >> DENGELİ << (Başarılı)
 
 
 
-<<<<<< 10 değerin 6 tanesi dengeli bir dağılımla şifreledi. Başarı oranı %60 olarak hesaplandı.>>>>
+### 10 değerin 6 tanesi dengeli bir dağılımla şifreledi. Başarı oranı %60 olarak hesaplandı.
 
 
 
 
 
-#### Mersenne sayılar(Binarysi sadece 1 olan sayılar):
+# Mersenne sayılar(Binarysi sadece 1 olan sayılar):
 
 
 
@@ -2254,7 +2251,7 @@ DURUM: Dengesiz
 
 ---------------------------------------------
 
-<<<<<< 8 değerin 6 tanesi dengeli bir dağılımla şifreledi. Başarı oranı %75 olarak hesaplandı.>>>>
+### 8 değerin 6 tanesi dengeli bir dağılımla şifreledi. Başarı oranı %75 olarak hesaplandı.
 
 
 
