@@ -20,8 +20,6 @@ Karıştırma (Diffusion): İki akış XOR işlemine sokularak bitlerin homojen 
 
 # Algoritmanın Sözde (Pseudo) Kodu
 
-# Projenin Sözde (Pseudo) Kodu
-
 ```text
 BAŞLA
 
@@ -61,6 +59,7 @@ BİTİR
 ```
 
 # Algoritmanın Akış Şeması
+
 ```mermaid
 graph TD
     A[Başlat: Kullanıcıdan Tohum Al] --> B[Otomatik Anahtar Hesapla: Key = Seed + 1]
